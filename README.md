@@ -23,7 +23,7 @@ Welcome to the **PizzaStore** project! This is a full-stack application designed
 
 -   Robust backend built with **.NET 8.0**.
 -   Uses **Entity Framework Core** for database operations.
--   Provides RESTful APIs for managing orders, customers, and pizzas.
+-   Provides RESTful APIs for managing pizzas, orders, and customers.
 
 ---
 
@@ -53,6 +53,7 @@ Before you begin, ensure you have the following installed:
     ```
 
 3. Restore backend dependencies:
+
     ```bash
     cd ../PizzaStore
     dotnet restore
@@ -65,10 +66,13 @@ Before you begin, ensure you have the following installed:
 ### Backend
 
 1. Apply migrations and seed the database:
+
     ```bash
     dotnet ef database update
     ```
+
 2. Run the backend:
+
     ```bash
     dotnet run
     ```
@@ -76,10 +80,12 @@ Before you begin, ensure you have the following installed:
 ### Frontend
 
 1. Start the development server:
+
     ```bash
     cd ../PizzaClient
     npm run dev
     ```
+
 2. Access the application at [http://localhost:5173](http://localhost:5173).
 
 ---
@@ -100,26 +106,6 @@ Before you begin, ensure you have the following installed:
 -   `POST /pizzas`: Adds a new pizza.
 -   `PUT /pizzas/{id}`: Updates an existing pizza.
 -   `DELETE /pizzas/{id}`: Deletes a pizza.
-
-### Order Management
-
--   `GET /orders`: Retrieves all orders.
--   `POST /orders`: Creates a new order.
--   `PUT /orders/{id}`: Updates an existing order.
--   `DELETE /orders/{id}`: Deletes an order.
-
-### Customer Management
-
--   `GET /customers`: Retrieves all customers.
--   `POST /customers`: Adds a new customer.
--   `PUT /customers/{id}`: Updates an existing customer.
--   `DELETE /customers/{id}`: Deletes a customer.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
